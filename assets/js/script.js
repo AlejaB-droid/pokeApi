@@ -4,6 +4,7 @@ const API = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=20";
 
 //Consumir API
 const getData = (api) =>{
+    document.getElementById("datosPj").innerHTML = "";
     console.log(api);
     fetch(api)
     .then(
